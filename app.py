@@ -15,8 +15,8 @@ if not api_key:
 
 genai.configure(api_key=api_key)
 
-# 모델 설정 (가장 안정적인 flash 모델 사용)
-model = genai.GenerativeModel('gemini-1.5-flash')
+# 모델 설정 (최신 표준 모델 사용)
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 uploaded_file = st.file_uploader("서류 사진 업로드", type=["jpg", "jpeg", "png"])
 
