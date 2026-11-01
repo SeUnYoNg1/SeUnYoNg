@@ -26,7 +26,7 @@ if uploaded_file is not None:
         with st.spinner("AI가 분석 중입니다..."):
             try:
                 response = client.models.generate_content(
-                    model="gemini-2.5-flash",
+                    model="gemini-3.8-flash",
                     contents=[image, "사진 속 서류를 분석하여 받을 수 있는 맞춤 정부지원금 3가지를 추천하고 이유를 설명해줘."]
                 )
                 st.markdown("### 📊 분석 결과")
